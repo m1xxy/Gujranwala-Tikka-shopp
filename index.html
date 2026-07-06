@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>گوجرانوالہ تکہ شاپ | مینیو</title>
+    
+    <!-- Authentic Urdu Font (Noto Nastaliq Urdu) & Fallbacks -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bbq: {
+                            900: '#2A0800',
+                            800: '#4A0E00',
+                            red: '#B91C1C',
+                            gold: '#FFC107',
+                            light: '#FFF8E1'
+                        }
+                    },
+                    fontFamily: {
+                        urdu: ['"Noto Nastaliq Urdu"', 'serif'],
+                        sans: ['Inter', 'sans-serif']
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1.2s ease-out forwards',
+                        'flicker': 'flicker 2s infinite alternate',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        flicker: {
+                            '0%, 19%, 21%, 23%, 25%, 54%, 56%, 100%': { opacity: '1' },
+                            '20%, 24%, 55%': { opacity: '0.8' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom scrollbar for BBQ theme */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1a0500; }
+        ::-webkit-scrollbar-thumb { background: #B91C1C; border-radius: 4px; }
+        
+        /* Urdu Typography spacing fixes */
+        .urdu-text {
+            line-height: 2.2;
+            word-spacing: 2px;
+        }
+
+        /* Fire text gradient */
+        .text-fire {
+            background: linear-gradient(to bottom, #FFC107, #FF5722, #D84315);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Ambient background overlay */
+        .bg-overlay {
+            background: linear-gradient(to bottom, rgba(15, 2, 0, 0.9) 0%, rgba(20, 5, 0, 0.95) 100%), 
+                        url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover fixed;
+        }
+    </style>
+</head>
+
+<body class="bg-overlay text-gray-100 font-urdu antialiased min-h-screen relative overflow-x-hidden">
+
+    <!-- Fire Particles GIF (Background Accent) -->
+    <img src="https://media.giphy.com/media/3o7bQ07O6TzL2iF96w/giphy.gif" alt="Fire Overlay" 
+         class="fixed top-0 left-0 w-full h-full object-cover opacity-10 mix-blend-screen pointer-events-none z-0">
+
+    <div class="relative z-10 max-w-5xl mx-auto px-4 py-10">
+
+        <!-- Header Section -->
+        <header class="text-center mb-12 animate-fade-in relative">
+            <div class="flex justify-center items-center mb-4 gap-4">
+                <i class="fas fa-fire text-3xl text-orange-500 animate-flicker"></i>
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-fire drop-shadow-[0_0_15px_rgba(255,87,34,0.5)] py-2">
+                    گوجرانوالہ تکہ شاپ
+                </h1>
+                <i class="fas fa-fire text-3xl text-orange-500 animate-flicker"></i>
+            </div>
+            
+            <div class="inline-block bg-bbq-red text-white text-3xl px-12 py-2 rounded-full border-2 border-bbq-gold shadow-[0_0_20px_rgba(185,28,28,0.6)]">
+                مینیو
+            </div>
+        </header>
+
+        <!-- Menu Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
+            
+            <!-- Item 1 -->
+            <div class="bg-black/60 border border-red-900/50 hover:border-bbq-gold/60 p-5 rounded-2xl flex justify-between items-center transition-all duration-300 hover:bg-black/80 shadow-lg group animate-fade-in" style="animation-delay: 0.1s;">
+                <h2 class="text-2xl text-bbq-light urdu-text group-hover:text-bbq-gold transition-colors">چکن لیگ پیس</h2>
+                <div class="text-left font-sans flex flex-col items-end">
+                    <span class="text-2xl font-bold text-white">350/-</span>
+                    <span class="text-sm text-gray-400 font-urdu urdu-text">4200/- درجن</span>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="bg-black/60 border border-red-900/50 hover:border-bbq-gold/60 p-5 rounded-2xl flex justify-between items-center transition-all duration-300 hover:bg-black/80 shadow-lg group animate-fade-in" style="animation-delay: 0.15s;">
+                <h2 class="text-2xl text-bbq-light urdu-text group-hover:text-bbq-gold transition-colors">چکن تکہ بوٹی</h2>
+                <div class="text-left font-sans flex flex-col items-end">
+                    <span class="text-2xl font-bold text-white">200/-</span>
+                    <span class="text-sm text-gray-400 font-urdu urdu-text">2400/- درجن</span>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="bg-black/60 border border-red-900/50 hover:border-bbq-gold/60 p-5 rounded-2xl flex justify-between items-center transition-all duration-300 hover:bg-black/80 shadow-lg group animate-fade-in" style="animation-delay: 0.2s;">
+                <h2 class="text-2xl text-bbq-light urdu-text group-hover:text-bbq-gold transition-colors">چکن ملائی بوٹی</h2>
+                <div class="text-left font-sans flex flex-col items-end">
+                    <span class="text-2xl font-bold text-white">230/-</span>
+                    <span class="text-sm text-gray-400 font-urdu urdu-text">2760/- درجن</span>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="bg-black/60 border border-red-900/50 hover:border-bbq-gold/60 p-5 rounded-2xl flex justify-between items-center transition-all duration-300 hover:bg-black/80 shadow-lg group animate-fade-in" style="animation-delay: 0.25s;">
+                <h2 class="text-2xl text-bbq-light urdu-text group-hover:text-bbq-gold transition-colors">چکن سیخ کباب</h2>
+                <div class="text-left font-sans flex flex-col items-end">
+                    <span class="text-2xl font-bold text-white">100/-</span>
+                    <span class="text-sm text-gray-400 font-urdu urdu-text">1200/- درجن</span>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="bg-black/60 border border-red-900/50 hover:border-bbq-gold/60 p-5 rounded-2xl flex justify-between items-center transition-all duration-300 hover:bg-black/80 shadow-lg group animate-fade-in" style="animation-delay: 0.3s;">
+                <h2 class="text-2xl text-bbq-light urdu-text group-hover:text-bbq-gold transition-colors">چکن ریشمی کباب</h2>
+                <div class="text-left font-sans flex flex-col items-end">
+                    <span class="text-2xl font-bold text-white">120/-</span>
+                    <span class="text-sm text-gray-400 font-urdu urdu-text">1440/- درجن</span>
+                </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="bg-black/60 border border-red-900/50 hover:border-bbq-gold/60 p-5 rounded-2xl flex justify-between items-center transition-all duration-300 hover:bg-black/80 shadow-lg group animate-fade-in" style="animation-delay: 0.35s;">
+                <h2 class="text-2xl text-bbq-light urdu-text group-hover:text-bbq-gold transition-colors">بیف تکہ بوٹی (ڈبل سیخ)</h2>
+                <div class="text-left font-sans flex flex-col items-end">
+                    <span class="text-2xl font-bold text-white">220/-</span>
+                    <span class="text-sm text-gray-400 font-urdu urdu-text">2640/- درجن</span>
+                </div>
+            </div>
+
+            <!-- Item 7 (UPDATED PRICE) -->
+            <div class="bg-black/60 border border-red-900/50 hover:border-bbq-gold/60 p-5 rounded-2xl flex justify-between items-center transition-all duration-300 hover:bg-black/80 shadow-lg group animate-fade-in" style="animation-delay: 0.4s;">
+                <h2 class="text-2xl text-bbq-light urdu-text group-hover:text-bbq-gold transition-colors">چکن کڑاہی (فل)</h2>
+                <div class="text-left font-sans">
+                    <span class="text-2xl font-bold text-white">2700/-</span>
+                </div>
+            </div>
+
+            <!-- Item 8 -->
+            <div class="bg-black/60 border border-red-900/50 hover:border-bbq-gold/60 p-5 rounded-2xl flex justify-between items-center transition-all duration-300 hover:bg-black/80 shadow-lg group animate-fade-in" style="animation-delay: 0.45s;">
+                <h2 class="text-2xl text-bbq-light urdu-text group-hover:text-bbq-gold transition-colors">چکن کڑاہی (ہاف)</h2>
+                <div class="text-left font-sans">
+                    <span class="text-2xl font-bold text-white">1300/-</span>
+                </div>
+            </div>
+
+            <!-- Item 9 -->
+            <div class="bg-black/60 border border-red-900/50 hover:border-bbq-gold/60 p-5 rounded-2xl flex justify-between items-center transition-all duration-300 hover:bg-black/80 shadow-lg group animate-fade-in" style="animation-delay: 0.5s;">
+                <h2 class="text-2xl text-bbq-light urdu-text group-hover:text-bbq-gold transition-colors">بیف تکہ فل کڑاہی (6 پیس)</h2>
+                <div class="text-left font-sans">
+                    <span class="text-2xl font-bold text-white">1700/-</span>
+                </div>
+            </div>
+
+            <!-- Item 10 -->
+            <div class="bg-black/60 border border-red-900/50 hover:border-bbq-gold/60 p-5 rounded-2xl flex justify-between items-center transition-all duration-300 hover:bg-black/80 shadow-lg group animate-fade-in" style="animation-delay: 0.55s;">
+                <h2 class="text-2xl text-bbq-light urdu-text group-hover:text-bbq-gold transition-colors">بیف کڑاہی (ہاف)</h2>
+                <div class="text-left font-sans">
+                    <span class="text-2xl font-bold text-white">900/-</span>
+                </div>
+            </div>
+
+            <!-- Item 11 -->
+            <div class="bg-black/60 border border-red-900/50 hover:border-bbq-gold/60 p-5 rounded-2xl flex justify-between items-center transition-all duration-300 hover:bg-black/80 shadow-lg group animate-fade-in" style="animation-delay: 0.6s;">
+                <h2 class="text-2xl text-bbq-light urdu-text group-hover:text-bbq-gold transition-colors">چکن سیخ کباب (فل کڑاہی)</h2>
+                <div class="text-left font-sans">
+                    <span class="text-2xl font-bold text-white">1600/-</span>
+                </div>
+            </div>
+
+            <!-- Item 12 -->
+            <div class="bg-black/60 border border-red-900/50 hover:border-bbq-gold/60 p-5 rounded-2xl flex justify-between items-center transition-all duration-300 hover:bg-black/80 shadow-lg group animate-fade-in" style="animation-delay: 0.65s;">
+                <h2 class="text-2xl text-bbq-light urdu-text group-hover:text-bbq-gold transition-colors">چکن سیخ کباب (ہاف کڑاہی)</h2>
+                <div class="text-left font-sans">
+                    <span class="text-2xl font-bold text-white">900/-</span>
+                </div>
+            </div>
+
+            <!-- Item 13 -->
+            <div class="bg-black/60 border border-red-900/50 hover:border-bbq-gold/60 p-5 rounded-2xl flex justify-between items-center transition-all duration-300 hover:bg-black/80 shadow-lg group animate-fade-in" style="animation-delay: 0.7s;">
+                <h2 class="text-2xl text-bbq-light urdu-text group-hover:text-bbq-gold transition-colors">ریشمی کباب (فل کڑاہی)</h2>
+                <div class="text-left font-sans">
+                    <span class="text-2xl font-bold text-white">1900/-</span>
+                </div>
+            </div>
+
+            <!-- Item 14 -->
+            <div class="bg-black/60 border border-red-900/50 hover:border-bbq-gold/60 p-5 rounded-2xl flex justify-between items-center transition-all duration-300 hover:bg-black/80 shadow-lg group animate-fade-in" style="animation-delay: 0.75s;">
+                <h2 class="text-2xl text-bbq-light urdu-text group-hover:text-bbq-gold transition-colors">ریشمی کباب (ہاف کڑاہی)</h2>
+                <div class="text-left font-sans">
+                    <span class="text-2xl font-bold text-white">1000/-</span>
+                </div>
+            </div>
+
+            <!-- Item 15 -->
+            <div class="bg-black/60 border border-red-900/50 hover:border-bbq-gold/60 p-5 rounded-2xl flex justify-between items-center transition-all duration-300 hover:bg-black/80 shadow-lg group animate-fade-in" style="animation-delay: 0.8s;">
+                <h2 class="text-2xl text-bbq-light urdu-text group-hover:text-bbq-gold transition-colors">بریانی (ڈبل)</h2>
+                <div class="text-left font-sans">
+                    <span class="text-2xl font-bold text-white">270/-</span>
+                </div>
+            </div>
+
+            <!-- Item 16 -->
+            <div class="bg-black/60 border border-red-900/50 hover:border-bbq-gold/60 p-5 rounded-2xl flex justify-between items-center transition-all duration-300 hover:bg-black/80 shadow-lg group animate-fade-in" style="animation-delay: 0.85s;">
+                <h2 class="text-2xl text-bbq-light urdu-text group-hover:text-bbq-gold transition-colors">چکن بریانی</h2>
+                <div class="text-left font-sans">
+                    <span class="text-2xl font-bold text-white">150/-</span>
+                </div>
+            </div>
+
+            <!-- Item 17 -->
+            <div class="bg-black/60 border border-red-900/50 hover:border-bbq-gold/60 p-5 rounded-2xl flex justify-between items-center transition-all duration-300 hover:bg-black/80 shadow-lg group animate-fade-in" style="animation-delay: 0.9s;">
+                <h2 class="text-2xl text-bbq-light urdu-text group-hover:text-bbq-gold transition-colors">سادہ بریانی</h2>
+                <div class="text-left font-sans">
+                    <span class="text-2xl font-bold text-white">100/-</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer Notice Banner -->
+        <div class="mt-12 bg-gradient-to-r from-red-900 via-bbq-red to-red-900 text-center py-4 rounded-xl border border-red-700 shadow-[0_4px_20px_rgba(185,28,28,0.4)] animate-fade-in" style="animation-delay: 1s;">
+            <p class="text-xl md:text-2xl text-white urdu-text font-bold">
+                شادی بیاہ اور دیگر تقریبات کیلئے مال آرڈر پر بھی تیار کیا جاتا ہے
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
